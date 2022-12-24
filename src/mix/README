@@ -1,5 +1,3 @@
-My recommanded default coder.
-
 Mixture of all:
 	- using look up tables for encoding and hamming weight calculation,
 	- using SSE for decoding,
