@@ -111,10 +111,10 @@ Info:
 
 TODO:
 
-	Translation.
+	Translation
 	Unbuffered file access
 	Stream en-/decoding
-	LT for decoder
+	LUT for decoder
 
 
 

@@ -1,0 +1,10 @@
+My recommanded default coder.
+
+Mixture of all:
+	- using look up tables for encoding and hamming weight calculation,
+	- using SSE for decoding,
+	- starts several decode process and
+	- uses a single process to encode.
+
+
+Finished, except bugfixes.

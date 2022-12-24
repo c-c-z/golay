@@ -1,0 +1,4 @@
+Default golay coder with look up tables for encoding and hamming weight calculation.
+
+
+Finished, except bugfixes.
