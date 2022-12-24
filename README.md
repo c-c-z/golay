@@ -14,17 +14,10 @@ Build/ Install:
 
 		make clean; make
 
-	You can use own CFLAGS by setting USERCFLAGS.
+	You can use your own CFLAGS by setting USERCFLAGS.
 
 
 	The source is available in 4 versions.
-
-		src/def
-			includes the default coder.
-			the version
-				has the lowest memory usage,
-				calculates everything on the FPU and
-				reads buffered, de-/ encodes and writes buffered up to 3 Bytes at once.
 
 		src/lut
 			includes a coder using lookup tables to encode the data and for calculating the hamming weight,
@@ -47,6 +40,13 @@ Build/ Install:
 			using SSE for decoding,
 			starts several decode processes and
 			uses a single process to encode.
+
+		src/def
+			includes the default coder.
+			the version
+				has the lowest memory usage,
+				calculates everything on the FPU and
+				reads buffered, de-/ encodes and writes buffered up to 3 Bytes at once.
 
 
 	All file accesses are buffered, therefore it doesn't make a difference how many bytes the coder reads/ writes at once!
