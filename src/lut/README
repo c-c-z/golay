@@ -1,0 +1,8 @@
+Default golay coder with look up tables for encoding and hamming weight calculation.
+
+
+TODO:
+	look up table for decoding.
+
+
+No known bugs.

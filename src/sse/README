@@ -1,0 +1,5 @@
+Default golay coder using SSE(2) and starts several de-/encode processes.
+
+
+Finished.
+No known bugs.
