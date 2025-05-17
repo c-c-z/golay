@@ -22,18 +22,9 @@ Build/ Install:
 		src/lut
 			includes a coder using lookup tables to encode the data and for calculating the hamming weight,
 			everthing else comes from the default version.
-			the version
-				has the highest memory usage,
-				has the lowest operations count and
-				reads buffered, de-/ encodes and writes buffered up to 3 Bytes at once.
 
 		src/sse
 			includes a coder, using SSE and starting several de-/encode tasks.
-			the version
-				has the fastest operations speed,
-				a higher memory usage, than default,
-				reads buffered, encodes and writes buffered up to 3.000.000 Bytes at once and
-				reads buffered, decodes and writes buffered up to 1.500.000 Bytes at once.
 
 		src/mix
 			using look up tables for encoding and hamming weight calculation,
@@ -43,15 +34,6 @@ Build/ Install:
 
 		src/def
 			includes the default coder.
-			the version
-				has the lowest memory usage,
-				calculates everything on the FPU and
-				reads buffered, de-/ encodes and writes buffered up to 3 Bytes at once.
-
-
-	All file accesses are buffered, therefore it doesn't make a difference how many bytes the coder reads/ writes at once!
-	The higher read/ write count of the SSE version bases on the fact that i needed some more operations to give SSE and threading a real sense, here.
-
 
 
 Usage:
